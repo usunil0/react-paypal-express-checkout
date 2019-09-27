@@ -152,6 +152,8 @@
                         // getting buyer's shipping address and email
                         payment.address = payment_data.payer.payer_info.shipping_address;
                         payment.email = payment_data.payer.payer_info.email;
+                        //below line added by usunil0(github or @gmail.com) to return the whole object
+                        payment.payment_data = payment_data;
                         _this2.props.onSuccess(payment);
                     });
                 };
